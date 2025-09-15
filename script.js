@@ -93,6 +93,17 @@ console.log(primeiroEUltimo(["maçã", "banana", "laranja"]));
 console.log(primeiroEUltimo([11,32,88,25])); */
 
 //Crie uma função somarElementos que receba um array de números e retorne a soma de todos os elementos.
+/*function somarElementos(array) {
+  let soma = 0;
+  for (let i = 0; i < array.length; i++) {
+    soma += array[i];
+  }
+  return soma;
+}
+let numeros = [1, 2, 3, 4, 5];
+let resultado = somarElementos(numeros);
+
+console.log("A soma dos elementos é:", resultado);*/
 
 //Crie uma função controleDeEstoque que:
 //● Receba um array de objetos no formato:
@@ -103,3 +114,23 @@ console.log(primeiroEUltimo([11,32,88,25])); */
 //]
 //Exiba cada produto no console no formato "Produto: Arroz | Quantidade: 10".
 //Retorne o total de itens no estoque.
+ /* function controleDeEstoque(produtos) {
+  let totalItens = 0;
+
+  produtos.forEach(produto => {
+    console.log(`Produto: ${produto.nome} | Quantidade: ${produto.quantidade}`);
+    totalItens += produto.quantidade;
+  });
+
+  return totalItens;
+}
+
+
+let estoque = [
+  { nome: "Arroz", quantidade: 10 },
+  { nome: "Feijão", quantidade: 5 },
+  { nome: "Macarrão", quantidade: 8 }
+];
+
+let total = controleDeEstoque(estoque);
+console.log("Total de itens no estoque:", total); */
